@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 export const Button: React.FC<{
   variant?: 'filled' | 'outlined' | 'ghost';
   size?: 'sm' | 'md' | 'lg';
@@ -22,18 +24,20 @@ export const Button: React.FC<{
 
   const variantStyles = {
     filled:
-      'bg-gradient-to-r from-red-500 to-orange-500 text-white hover:shadow-lg hover:scale-105',
+      'bg-main text-white hover:shadow-lg hover:scale-105',
     outlined:
-      'border-2 border-main text-main bg-transparent hover:bg-main hover:text-white',
+      'border-2 border-orange-400 text-main bg-transparent hover:bg-main hover:text-white',
     ghost: 'text-main hover:bg-main/10'
   };
 
   return (
-    <button
+    <motion.button
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
       onClick={onClick}
       className={`${baseStyles} ${sizeStyles[size]} ${variantStyles[variant]} ${className}`}
     >
       {children}
-    </button>
+    </motion.button>
   );
 };
