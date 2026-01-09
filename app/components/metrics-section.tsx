@@ -33,7 +33,7 @@ const MetricsSection: React.FC = () => {
               initial={{ scale: 0.5 }}
               animate={isInView ? { scale: 1 } : { scale: 0.5 }}
               transition={{ duration: 0.5, delay: idx * 0.2 + 0.3 }}
-              className="text-5xl font-bold text-white mb-2"
+              className="text-5xl font-medium text-white mb-2"
             >
               {metric.value}
             </motion.div>

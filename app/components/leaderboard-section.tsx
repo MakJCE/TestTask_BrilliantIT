@@ -29,7 +29,7 @@ const LeaderboardSection: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="flex justify-between items-center mb-8"
         >
-          <h2 className="text-4xl font-bold">LLM Leaderboard</h2>
+          <h2 className="text-4xl font-medium font-mono">LLM Leaderboard</h2>
           <Button variant="outlined" size="sm">
             Submit your model
           </Button>
@@ -76,7 +76,7 @@ const LeaderboardSection: React.FC = () => {
                     animate={
                       isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }
                     }
-                    transition={{ duration: 0.4, delay: 0.6 + idx * 0.1 }}
+                    transition={{ duration: 0.4, delay: 0 + idx * 0.1 }}
                     whileHover={{
                       backgroundColor: 'rgba(255, 255, 255, 0.05)'
                     }}

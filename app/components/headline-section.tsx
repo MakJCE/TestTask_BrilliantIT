@@ -25,12 +25,12 @@ const HeadlineSection: React.FC = () => {
         </Button>
       </motion.div>
 
-      <div className=" text-start space-y-8 px-6 md:px-12">
+      <div className=" text-start space-y-8 px-6 md:px-24">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-[90px] 2xl:text-[128px] font-semibold font-mono bg-main bg-clip-text text-transparent leading-tight"
+          className="text-[90px] 2xl:text-[128px] font-medium font-mono bg-main bg-clip-text text-transparent leading-tight"
         >
           A new economic primitive for funding decentralized AI
         </motion.h1>

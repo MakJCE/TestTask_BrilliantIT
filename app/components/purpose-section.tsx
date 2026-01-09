@@ -20,7 +20,7 @@ const PurposeSection: React.FC = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
           transition={{ duration: 0.8 }}
-          className="text-5xl font-bold"
+          className="text-5xl font-medium font-mono"
         >
           Crowdsourcing our collective intelligence to build the best AI
         </motion.h2>
