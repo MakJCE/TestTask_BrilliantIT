@@ -11,7 +11,8 @@ const JoinUsFooterSection: React.FC = () => {
     <motion.section ref={ref} className="relative py-20">
       {/* Join Us */}
       <div className="relative h-150">
-        <motion.div className="absolute right-50 top-0 z-0 size-80 2xl:size-100 bg-[url('/images/full_moon.png')] bg-cover bg-center" />
+        {/* moon */}
+        <motion.div className="hidden md:block absolute right-50 top-0 z-0 size-80 2xl:size-100 bg-[url('/images/full_moon.png')] bg-cover bg-center" />
         <div className="px-8 md:px-24 2xl:px-80 max-w-3xl 2xl:max-w-7xl text-start space-y-8 z-10">
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
@@ -54,7 +55,7 @@ const JoinUsFooterSection: React.FC = () => {
       >
         <motion.div className="absolute inset-y-0 bottom-0 z-0 w-full h-138 bg-[url('/images/earth_view.png')] bg-cover bg-center" />
 
-        <div className="w-full flex flex-col items-center gap-8 z-10 px-40">
+        <div className="w-full flex flex-col items-center gap-8 z-10 px-4 md:px-40">
           <div className="w-full flex justify-center gap-16 border-b border-gray-600 py-6">
             <motion.a
               whileHover={{ scale: 1.05, color: '#ffffff' }}
@@ -78,7 +79,7 @@ const JoinUsFooterSection: React.FC = () => {
               About
             </motion.a>
           </div>
-          <div className="w-full flex flex-col md:flex-row justify-between">
+          <div className="w-full flex flex-col md:flex-row justify-between items-center gap-10">
             <div className="flex gap-4">
               {[1, 2, 3].map((i) => (
                 <motion.div

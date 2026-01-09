@@ -30,7 +30,7 @@ const HeadlineSection: React.FC = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-[90px] 2xl:text-[128px] font-medium font-mono bg-main bg-clip-text text-transparent leading-tight"
+          className="text-[40px] 2xl:text-[128px] font-medium font-mono bg-main bg-clip-text text-transparent leading-tight sm:text-[60px] md:text-[80px] lg:text-[100px]"
         >
           A new economic primitive for funding decentralized AI
         </motion.h1>
@@ -50,7 +50,9 @@ const HeadlineSection: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <Button size="lg" variant='outlined'>Buy Spice AI</Button>
+          <Button size="lg" variant="outlined">
+            Buy Spice AI
+          </Button>
         </motion.div>
       </div>
     </motion.section>
